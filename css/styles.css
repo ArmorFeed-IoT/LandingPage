@@ -1,0 +1,39 @@
+/** CUSTOM PROPERTY */
+
+:root {
+    /** Colors palette **/
+    --Light: #ffffff;
+    --Darked: #000000;
+    --Gray: #5c5c5c;
+    --OrangeLight: #ffece1;
+    --OrangeDark: #ff7f37;
+    --GreenLight: #e5eced;
+    --BlueLight: #ecf0ff;
+    --BlueDark: #5d5fef;
+
+    /** Fonts */
+    --mainFont: 'Mulish', sans-serif;;
+}
+
+/** GLOBALS */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body {
+    font-size: 16px;
+    font-family: var(--mainFont);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Utilities **/
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
