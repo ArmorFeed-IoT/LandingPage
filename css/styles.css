@@ -46,7 +46,6 @@ body {
 .banners {
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;
     height: 120rem;
     width: 100%;
     padding: 5rem 0;
@@ -55,8 +54,9 @@ body {
     .banners {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        column-gap: 5rem;
         height: 50rem;
+        column-gap: 5rem;
+        row-gap: 2.5rem;
     }
 }
 .banner {
@@ -69,6 +69,14 @@ body {
     box-shadow: 9px 8px 20px -1px rgba(0,0,0,0.31);
     -webkit-box-shadow: 9px 8px 20px -1px rgba(0,0,0,0.31);
     -moz-box-shadow: 9px 8px 20px -1px rgba(0,0,0,0.31);
+    margin-bottom: 1.5rem;
+    transition: transform .2s;
+}
+.banner:hover {
+    transform: scale(1.05);
+}
+.banner:last-child {
+    margin-bottom: 0rem;
 }
 .banner__companies {
     background-image: url("../img/banner_companies.png");
@@ -139,6 +147,16 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 400px) {
+    .feature {
+        flex-direction: column;
+        height: auto;
+    }
+}
+.feature:last-child {
+    margin-bottom: 0rem;
 }
 @media (min-width: 920px) {
     .feature {
