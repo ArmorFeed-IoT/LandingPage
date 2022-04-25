@@ -51,8 +51,9 @@ body {
     text-align: center;
     font-size: 8rem;
 }
-.About-us__content__section img{
+.About-us__content__section__first-img {
     display: block;
+    width: 100%;
 }
 .About-us__content {
     width: 100%;
@@ -64,18 +65,15 @@ body {
     row-gap: 5%;
     align-items: center;
 }
-@media (max-width: 778px) {
-    .About-us__content__section__first {
-        grid-template-columns: unset;
-        grid-template-rows: 45% 45%;
-        height: auto;
-        row-gap: 10%;
-    }
-    .About-us__content__section__first-img {
-        width: auto;
-        height: 100%;
-    }
+
+
+.About-us__content__section__second-img {
+    display: block;
+    width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
+
 .About-us__content__section__first-description, .About-us__content__section__second-description {
     background-color: var(--OrangeLight);
     font-weight: 500;
@@ -94,29 +92,69 @@ body {
     margin: 5rem 0;
 }
 
-.About-us__content__section__second-img {
-    display: block;
-    width: 50rem;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+
+@media (max-width: 778px) {
+    .About-us-title {
+        font-size: 4rem;
+    }
+    .About-us__content__section__first {
+        grid-template-columns: unset;
+        grid-template-rows: 45% 45%;
+        height: 50rem;
+        row-gap: 10%;
+        column-gap: unset;
+    }
+    .About-us__content__section__first-img {
+        width: auto;
+        height: 100%;
+        justify-self: center;
+    }
+    .About-us__content__section__first-description {
+        font-size: 2.5rem;
+    }
+    .About-us__content__section__second-description {
+        font-size: 2.5rem;
+    }
+    .About-us__content__section__first-description {
+        padding: 5rem 2rem;
+    }
+    .About-us__content__section__second-img {
+        display: block;
+        width: 40rem;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
 }
 
-@media screen and (max-width:35rem){
+@media (max-width: 480px){
+    .About-us-title {
+        font-size: 3rem;
+    }
     .About-us__content__section__first-description, .About-us__content__section__second-description{
         width: 90%;
         margin-left: 5%;
-        padding: 10% 10%;
-    }
-
-    .About-us__content__section__first-description, .About-us__content__section__first-img{
-        /*grid-column: 1/-1;*/
+        padding: 4.5rem 2.5rem;
     }
     .About-us__content__section__first-img {
         width: 80%;
         /*margin-left:10%;*/
     }
+    .About-us__content__section__first-description {
+        font-size: 1.5rem;
+    }
+    .About-us__content__section__second-description {
+        font-size: 1.5rem;
+    }
+    .About-us__content__section__second-img {
+        display: block;
+        width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
 
 }
+
+
 .bg-green {
     background-color: var(--GreenLight);
 }
@@ -345,7 +383,6 @@ body {
     background-color: transparent;
 }
 .TemplateTabsNav li a {
->>>>>>> feature/services
     color: var(--Darked);
 }
 .showNavAnimation {
