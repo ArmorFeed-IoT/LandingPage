@@ -10,9 +10,15 @@
     --GreenLight: #e5eced;
     --BlueLight: #ecf0ff;
     --BlueDark: #5d5fef;
+    --nav: #F8F8F8;
 
-    /** Fonts */
-    --mainFont: 'Mulish', sans-serif;;
+    /** Fonts **/
+    --mainFont: 'Mulish', sans-serif;
+
+    /** Screen size **/
+    --tablet: 76.8rem;
+    --mobile: 48rem;
+    --desktop: 120;
 }
 
 /** GLOBALS */
@@ -257,3 +263,217 @@ body {
     font-weight: bold;
 }
 
+/** NavBar Styles **/
+.header {
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+.header__tabs {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tabs li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header__tabs-item {
+    display: block;
+    font-size: 2.5rem;
+    list-style-type: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--Darked);
+    cursor: pointer;
+    transition: all 300ms;
+}
+.header__tabs-item:hover {
+    background-color: rgba(186, 215, 247,0.2);
+    transform: scale(1.2);
+}
+/* Special Classes to work with JavaScript */
+
+.item-selected {
+    border-bottom: 0.25rem solid var(--BlueDark);
+}
+
+.disabled {
+    display: none;
+}
+.burgerNav {
+    display: none;
+}
+.TemplateTabsNav {
+    background-color: var(--nav);
+    padding: 2rem 0;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 40%;
+}
+.TemplateTabsNav li {
+    list-style-type: none;
+}
+.close-btn {
+    color: red;
+}
+.bgColorTemplateNav {
+    background-color: transparent;
+}
+.TemplateTabsNav{
+    color: var(--Darked);
+}
+.showNavAnimation {
+    animation: newNav 500ms ease-in 0s normal 1;
+}
+.hideNavAnimation {
+    animation: offNav 500ms ease-in 0s normal 1;
+}
+.burgerNav {
+    cursor: pointer;
+}
+
+.not-clickable {
+    display: block;
+    border-radius: 2rem;
+    background-color: var(--BlueLight);
+    color: var(--BlueDark)
+}
+
+@keyframes offNav {
+    0% {
+        clip-path: circle(100% at 50%);
+    }
+    50%{
+        clip-path: circle(50% at 50%);
+    }
+    100%{
+        clip-path: circle(10% at 50%);
+    }
+}
+@keyframes newNav {
+    0% {
+        clip-path: circle(10% at 50%);
+    }
+    50%{
+        clip-path: circle(50% at 50%);
+    }
+    100%{
+        clip-path: circle(100% at 50%);
+    }
+}
+
+/* NavBar Media Queries*/
+@media (max-width: 1280px) {
+    .header__tabs-item {
+        font-size: 1.5rem;
+    }
+    .header__logo-text {
+        font-size: 1.5rem;
+    }
+    .header__logo{
+        flex-basis: 20%;
+    }
+    .header__tabs {
+        flex-basis: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .header__tabs {
+        display: none;
+    }
+    .burgerNav {
+        display: block;
+        flex-basis: 30%;
+        width: 5rem;
+        height: 5rem;
+        align-self: center;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .header__logo-img {
+        flex-basis: 70%;
+    }
+    .header__logo-text {
+        font-size: 1.2rem;
+        flex-basis: 30%;
+    }
+    .TemplateTabsNav {
+        width: 100%;
+        background-color: var(--nav);
+        padding: 2rem 0;
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .TemplateTabsNav li {
+        display: block;
+        width: 100%;
+    }
+    .header__tabs-item {
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .close-btn {
+        color: red;
+        background-color: var(--OrangeLight);
+    }
+}
+
+@media (max-width: 400px) {
+    .header__logo-text {
+        display: none;
+    }
+}
+
+/** Footer Styles **/
+.footer {
+    background-color: var(--nav);
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__Description {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__Description-item {
+    display: block;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+       flex-direction: column;
+       height: 80rem;
+    }
+    .footer__Description {
+        flex-direction: column;
+        height: 50rem;
+        align-items: center;
+    }
+}

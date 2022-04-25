@@ -12,20 +12,50 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-<!-TODO: Make the navigation >
+<header class="header">
+    <section class="header__logo">
+        <img src="img/ArmorFeed.png" alt="Logo image" class="header__logo-img">
+        <div class="header__logo-text">ArmorFeed</div>
+    </section>
+    <!-- Desktop navigation is injected here-->
+    <img src="img/burgerNav.svg" alt="Burger Nav Icon" class="burgerNav" id="burgerNav">
+    <!-- Tablet/mobile navigation is injected  here-->
+</header>
+<main class="container">
+    <section id="Home">Este es home</section>
+    <section id="About-us" class="disabled">Este es Nosotros</section>
+    <section id="Services" class="disabled">Este es Servicios</section>
+    <section id="Plans" class="disabled">Este es Planes</section>
+    <section id="Help" class="disabled">Este es Ayuda</section>
+</main>
+<footer id="footer" class="footer">
+    <!-- Footer Navigation is injected here -->
+    <section class="footer__Description">
+        <p class="footer__Description-item">Síguenos en</p>
+        <img src="img/facebookLogo.png" alt="Facebook Logo" class="footer__Description-item">
+        <img src="img/instagramLogo.png" alt="Instagram Logo" class="footer__Description-item">
+        <img src="img/twitterLogo.png" alt="twitter Logo" class="footer__Description-item">
+        <img src="img/youtubeLogo.png" alt="youtube Logo" class="footer__Description-item">
+    </section>
+</footer>
+<!--Nav Template to be injected using JavaScript -->
+<template id="TemplateNav">
+    <nav class="TemplateTabsNav showNavAnimation">
+        <li><a class="header__tabs-item" href="#Home">Home</a></li>
+        <li><a class="header__tabs-item" href="#About-us">Nosotros</a></li>
+        <li><a class="header__tabs-item" href="#Services">Servicios</a></li>
+        <li><a class="header__tabs-item" href="#Plans">Planes</a></li>
+        <li><a class="header__tabs-item" href="#Help">Ayuda</a></li>
+        <li><a class="header__tabs-item not-clickable">Iniciar</a></li>
+    </nav>
+</template>
+<script type="module" src="js/script.js"></script>
 
-
-
-<!-TODO: Make the footer ->
-
-<script src="js/script.js"></script>
 </body>
 </html>
