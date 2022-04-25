@@ -1,3 +1,4 @@
+
 /** CUSTOM PROPERTY */
 
 :root {
@@ -475,5 +476,63 @@ body {
         flex-direction: column;
         height: 50rem;
         align-items: center;
+    }
+}
+
+/** Plans Section **/
+.Plans {
+    padding: 3rem 0;
+}
+
+.Plans__content-item__card {
+    background-color: var(--OrangeLight);
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+
+.Plans__content-title {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.Plans__content-item__card-item {
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.Plans__content-item {
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-template-rows: repeat(1,1fr);
+    column-gap: 10%;
+}
+
+.Plans__content-item__card-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.Plans__content-item__card-button {
+    border: none;
+    padding: 2rem 5rem;
+    background-color: var(--OrangeDark);
+    color: var(--Light);
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.Plans__content-item__card-button {
+    margin: 2rem 20%;
+    border-radius: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .Plans__content-item {
+        display: block;
     }
 }
