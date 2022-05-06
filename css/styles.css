@@ -47,18 +47,18 @@ body {
 }
 
 /** About us Styles **/
-.About-us-title {
+.about-us-title {
     text-align: center;
     font-size: 8rem;
 }
-.About-us__content__section__first-img {
+.about-us__content__section__first-img {
     display: block;
     width: 100%;
 }
-.About-us__content {
+.about-us__content {
     width: 100%;
 }
-.About-us__content__section__first {
+.about-us__content__section__first {
     display: grid;
     grid-template-columns: 30% 60%;
     column-gap: 10%;
@@ -67,58 +67,58 @@ body {
 }
 
 
-.About-us__content__section__second-img {
+.about-us__content__section__second-img {
     display: block;
     width: 50rem;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
 
-.About-us__content__section__first-description, .About-us__content__section__second-description {
+.about-us__content__section__first-description, .about-us__content__section__second-description {
     background-color: var(--OrangeLight);
     font-weight: 500;
     font-size: 3rem;
     text-align: justify;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2), inset 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
-.About-us__content__section__first-description {
+.about-us__content__section__first-description {
     padding: 12% 8%;
     margin: 0;
     height: 100%;
 }
 
-.About-us__content__section__second-description {
+.about-us__content__section__second-description {
     padding: 6% 25%;
     margin: 5rem 0;
 }
 
 
 @media (max-width: 778px) {
-    .About-us-title {
+    .about-us-title {
         font-size: 4rem;
     }
-    .About-us__content__section__first {
+    .about-us__content__section__first {
         grid-template-columns: unset;
         grid-template-rows: 45% 45%;
         height: 50rem;
         row-gap: 10%;
         column-gap: unset;
     }
-    .About-us__content__section__first-img {
+    .about-us__content__section__first-img {
         width: auto;
         height: 100%;
         justify-self: center;
     }
-    .About-us__content__section__first-description {
+    .about-us__content__section__first-description {
         font-size: 2.5rem;
     }
-    .About-us__content__section__second-description {
+    .about-us__content__section__second-description {
         font-size: 2.5rem;
     }
-    .About-us__content__section__first-description {
+    .about-us__content__section__first-description {
         padding: 5rem 2rem;
     }
-    .About-us__content__section__second-img {
+    .about-us__content__section__second-img {
         display: block;
         width: 40rem;
         margin: 0 auto;
@@ -127,25 +127,25 @@ body {
 }
 
 @media (max-width: 480px){
-    .About-us-title {
+    .about-us-title {
         font-size: 3rem;
     }
-    .About-us__content__section__first-description, .About-us__content__section__second-description{
+    .about-us__content__section__first-description, .about-us__content__section__second-description{
         width: 90%;
         margin-left: 5%;
         padding: 4.5rem 2.5rem;
     }
-    .About-us__content__section__first-img {
+    .about-us__content__section__first-img {
         width: 80%;
         /*margin-left:10%;*/
     }
-    .About-us__content__section__first-description {
+    .about-us__content__section__first-description {
         font-size: 1.5rem;
     }
-    .About-us__content__section__second-description {
+    .about-us__content__section__second-description {
         font-size: 1.5rem;
     }
-    .About-us__content__section__second-img {
+    .about-us__content__section__second-img {
         display: block;
         width: 20rem;
         margin: 0 auto;
@@ -199,7 +199,7 @@ body {
     background-image: url("../img/banner_companies.png");
 }
 .banner__transportation {
-    background-image: url("../img/banner_transportation.png");
+    background-image: url("../img/banner-transportation.png");
 }
 .banner__services {
     background-image: url("../img/banner_services.png");
@@ -535,11 +535,11 @@ body {
 }
 
 /** Plans Section **/
-.Plans {
+.plans {
     padding: 3rem 0;
 }
 
-.Plans__content-item__card {
+.plans__content-item__card {
     background-color: var(--OrangeLight);
     text-align: center;
     list-style-type: none;
@@ -548,33 +548,33 @@ body {
     justify-content: space-between;
     margin: 2.5rem 0;
 }
-.Plans__title {
+.plans__title {
     font-size: 6rem;
     text-align: center;
 }
 
-.Plans__content-title {
+.plans__content-title {
     text-align: center;
     font-size: 5rem;
 }
 
-.Plans__content-item__card-item {
+.plans__content-item__card-item {
     margin: 1.5rem;
     font-size: 2rem;
 }
-.Plans__content-item {
+.plans__content-item {
     display: grid;
     grid-template-columns: repeat(2,45%);
     grid-template-rows: repeat(1,1fr);
     column-gap: 10%;
 }
 
-.Plans__content-item__card-title {
+.plans__content-item__card-title {
     font-size: 3rem;
     font-weight: 600;
 }
 
-.Plans__content-item__card-button {
+.plans__content-item__card-button {
     border: none;
     padding: 2rem 5rem;
     background-color: var(--OrangeDark);
@@ -584,27 +584,27 @@ body {
     font-size: 2rem;
 }
 
-.Plans__content-item__card-button {
+.plans__content-item__card-button {
     margin: 2rem 20%;
     border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
-    .Plans__content-item {
+    .plans__content-item {
         display: block;
     }
 }
 /** Services Section **/
-.Services__section {
+.services__section {
     width: 100%;
     margin: 5rem 0;
 }
-.Services__section-title {
+.services__section-title {
     font-size: 4.5rem;
     text-align: center;
     margin-top: 5rem;
 }
-.Services__section__questions {
+.services__section__questions {
     display: grid;
     grid-template-columns: calc(65% / 2) 25% calc(65% / 2);
     column-gap: 5%;
@@ -612,21 +612,21 @@ body {
     padding: 3.5rem 2.5rem;
 }
 
-.Services__section__questions__card {
+.services__section__questions__card {
     background-color: var(--OrangeLight);
     text-align: justify;
     padding: 4.5rem;
     font-size: 2.5rem;
     box-shadow: inset 0.15rem 0.35rem 0.4rem rgba(0,0,0,0.4), inset -0.15rem -0.35rem 0.4rem rgba(0,0,0,0.4);
 }
-.Services__section__questions-img {
+.services__section__questions-img {
     display: block;
     width: 100%;
     height: 100%;
     align-self: center;
 }
 
-.Services__section__description {
+.services__section__description {
     display: grid;
     grid-template-columns: 50% 40%;
     column-gap: 10%;
@@ -634,20 +634,20 @@ body {
     margin-bottom: 5rem;
 }
 
-.Services__section__description__card {
+.services__section__description__card {
     background-color: var(--OrangeLight);
     padding: 5rem;
     box-shadow: inset 0.15rem 0.35rem 0.4rem rgba(0,0,0,0.4), inset -0.15rem -0.35rem 0.4rem rgba(0,0,0,0.4);
 }
 
-.Services__section__description__card-title {
+.services__section__description__card-title {
     font-size: 2.5rem;
 }
 
-.Services__section__description__card__list-item {
+.services__section__description__card__list-item {
     display: block;
 }
-.Services__section__description__card__list {
+.services__section__description__card__list {
     height: 80%;
     font-size: 2.5rem;
     font-weight: 500;
@@ -663,40 +663,40 @@ body {
     margin-right: 5px;
 }
 
-.Services__section__description-img {
+.services__section__description-img {
     width: 100%;
     height: 100%;
 }
 
 @media (max-width: 1200px) {
-    .Services__section__questions-img {
+    .services__section__questions-img {
        height: auto;
     }
-    .Services__section__questions__card {
+    .services__section__questions__card {
         padding: 2rem;
     }
 }
 
 @media (max-width: 920px) {
-    .Services__section__questions {
+    .services__section__questions {
         grid-template-columns: unset;
         grid-template-rows: repeat(3,30%);
         column-gap: unset;
         row-gap: 5%;
         height: 80rem;
     }
-    .Services__section__questions-img {
+    .services__section__questions-img {
         width: auto;
         height: auto;
         justify-self: center;
         grid-row: 3 / 4;
     }
-    .Services__section__description {
+    .services__section__description {
         grid-template-columns: unset;
         grid-template-rows: repeat(2, calc(95% / 2));
         row-gap: 5%;
     }
-    .Services__section__description-img {
+    .services__section__description-img {
         display: block;
         width: 100%;
         height: 100%;
@@ -704,49 +704,49 @@ body {
 }
 
 @media (max-width: 768px) {
-    .Services__section__questions__card-title {
+    .services__section__questions__card-title {
         font-size: 2.8rem;
     }
-    .Services__section__questions__card-text {
+    .services__section__questions__card-text {
         font-size: 1.8rem;
     }
-    .Services__section__description {
+    .services__section__description {
         height: 100rem;
     }
 }
 
 @media (max-width: 500px) {
-    .Services__section__questions__card-title {
+    .services__section__questions__card-title {
         font-size: 2rem;
     }
-    .Services__section__questions__card-text {
+    .services__section__questions__card-text {
         font-size: 1.5rem;
     }
-    .Services__section__description__card {
+    .services__section__description__card {
         padding: 1.5rem;
     }
-    .Services__section__description__card__list {
+    .services__section__description__card__list {
         font-size: 2rem;
     }
-    .Services__section__description {
+    .services__section__description {
         grid-template-columns: unset;
         grid-template-rows: 60% 35%;
         row-gap: 5%;
     }
 }
 
-/** Ayuda styles **/
-.Help-title {
+/** Help styles **/
+.help-title {
     text-align: center;
     font-size: 5rem;
 }
 
-.Help__content {
+.help__content {
     display: grid;
     grid-template-rows: 40% 10% 50%;
     height: 120rem;
 }
-.Help__content__questions {
+.help__content__questions {
     display: grid;
     grid-template-columns: repeat(2,45%);
     grid-template-rows: repeat(2,45%);
@@ -754,20 +754,20 @@ body {
     margin-bottom: 4rem;
 }
 
-.Help__content__question__item-question,
-.Help__content__formQuestion {
+.help__content__question__item-question,
+.help__content__formQuestion {
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-.Help__content__question__item-answer {
+.help__content__question__item-answer {
     font-size: 2rem;
 }
-.Help__content__formQuestion {
+.help__content__formQuestion {
     text-align: center;
     margin-top: 1.5rem;
 }
-.Help__content__form {
+.help__content__form {
     width: 60rem;
     margin: 0 auto;
     display: grid;
@@ -776,48 +776,48 @@ body {
     row-gap: 5%;
     margin-bottom: 2rem;
 }
-.Help__content__form-input {
+.help__content__form-input {
     font-size: 2.4rem;
     text-align: center;
     padding: 2rem 0;
 }
-.Help__content__form-btn {
+.help__content__form-btn {
     font-size: 2rem;
     font-weight: 500;
 }
-.Help__content__form-textarea {
+.help__content__form-textarea {
     font-size: 2.4rem;
     display: block;
     padding: 50px;
 }
 
 @media (max-width: 768px) {
-    .Help__content {
+    .help__content {
         height: 150rem;
         margin-bottom: 5rem;
     }
-    .Help__content__questions {
+    .help__content__questions {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: calc(64% / 3) calc(64% / 3) 30% calc(64% / 3);
         row-gap: 2%;
         justify-content: center;
         margin-bottom: 4rem;
     }
-    .Help__content__form {
+    .help__content__form {
         width: 100%;
     }
-    .Help__content__question__item-question,
-    .Help__content__formQuestion {
+    .help__content__question__item-question,
+    .help__content__formQuestion {
         font-size: 2rem;
     }
 
-    .Help__content__question__item-answer {
+    .help__content__question__item-answer {
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .Help__content {
+    .help__content {
         height: 180rem;
         margin-bottom: 5rem;
     }
