@@ -1,7 +1,7 @@
 // Import Modules
-import { setNavClickEvent, hideSections, setHeaderNavEvent } from "./headerNav.js";
-import { SetBurgerNavIconEvent } from "./burgerNav.js";
-import { setFooterNavContent } from "./footerNav.js";
+import { setNavClickEvent, hideSections, setHeaderNavEvent } from "./header-nav.js";
+import { SetBurgerNavIconEvent } from "./burger-nav.js";
+import { setFooterNavContent } from "./footer-nav.js";
 
 (function init(){
     setHeaderNavEvent();

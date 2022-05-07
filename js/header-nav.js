@@ -1,5 +1,5 @@
-const template = document.getElementById("TemplateNav");
-const navTemplate = template.content.querySelector('.TemplateTabsNav');
+const template = document.getElementById("template-nav");
+const navTemplate = template.content.querySelector('.template-tabs-nav');
 
 
 export function setHeaderNavEvent(){
@@ -41,9 +41,9 @@ export function hideSections() {
 function injectNavInHeader() {
     const node = navTemplate.cloneNode(true);
     const header = document.querySelector('.header');
-    const referenceNode = document.querySelector('.burgerNav');
+    const referenceNode = document.querySelector('.burger-nav');
     header.insertBefore(node,referenceNode);
-    node.classList.remove('TemplateTabsNav');
+    node.classList.remove('template-tabs-nav');
     node.classList.add('header__tabs');
     setNavClickEvent(node,true);
 }

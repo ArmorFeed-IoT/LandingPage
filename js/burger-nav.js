@@ -1,7 +1,7 @@
-import { setNavClickEvent } from "./headerNav.js";
+import { setNavClickEvent } from "./header-nav.js";
 
-const navTemplate = document.getElementById("TemplateNav");
-const burgerIcon = document.getElementById("burgerNav");
+const navTemplate = document.getElementById("template-nav");
+const burgerIcon = document.getElementById("burger-nav");
 let allowed = true;
 
 export function SetBurgerNavIconEvent(){
@@ -19,10 +19,10 @@ export function InjectNavInDOM(p,n,referenceNode){
     closeButton.innerHTML = '<a class="header__tabs-item close-btn">X</a>';
     // Setting Events in X button
     closeButton.addEventListener('click', e => {
-        n.classList.remove('showNavAnimation');
-        n.classList.add('hideNavAnimation');
+        n.classList.remove('show-nav-animation');
+        n.classList.add('hide-nav-animation');
         setTimeout(() => {
-            n.classList.remove('hideNavAnimation');
+            n.classList.remove('hide-nav-animation');
             p.removeChild(n);
         },500);
         allowed = true;
@@ -35,7 +35,7 @@ export function InjectNavInDOM(p,n,referenceNode){
 }
 
 export function navInjection(parent,method,referenceNode){
-    const p = navTemplate.content.querySelector('.TemplateTabsNav');
+    const p = navTemplate.content.querySelector('.template-tabs-nav');
     const node = p.cloneNode(true);
     const body = document.querySelector('body');
     method(parent,node,referenceNode);

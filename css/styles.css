@@ -364,10 +364,10 @@ body {
 .disabled {
     display: none;
 }
-.burgerNav {
+.burger-nav {
     display: none;
 }
-.TemplateTabsNav {
+.template-tabs-nav {
     background-color: var(--nav);
     padding: 2rem 0;
     height: 10rem;
@@ -377,22 +377,22 @@ body {
     align-items: center;
     flex-basis: 40%;
 }
-.TemplateTabsNav li {
+.template-tabs-nav li {
     list-style-type: none;
 }
 .bgColorTemplateNav {
     background-color: transparent;
 }
-.TemplateTabsNav li a {
+.template-tabs-nav li a {
     color: var(--Darked);
 }
-.showNavAnimation {
+.show-nav-animation {
     animation: newNav 500ms ease-in 0s normal 1;
 }
-.hideNavAnimation {
+.hide-nav-animation {
     animation: offNav 500ms ease-in 0s normal 1;
 }
-.burgerNav {
+.burger-nav {
     cursor: pointer;
 }
 .close-btn {
@@ -447,7 +447,7 @@ body {
     .header__tabs {
         display: none;
     }
-    .burgerNav {
+    .burger-nav {
         display: block;
         flex-basis: 30%;
         width: 5rem;
@@ -465,7 +465,7 @@ body {
         font-size: 1.4rem;
         flex-basis: 30%;
     }
-    .TemplateTabsNav {
+    .template-tabs-nav {
         width: 100%;
         background-color: var(--nav);
         padding: 2rem 0;
@@ -473,7 +473,7 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .TemplateTabsNav li {
+    .template-tabs-nav li {
         display: block;
         width: 100%;
         align-items: center;
@@ -509,14 +509,14 @@ body {
     align-items: center;
 }
 
-.footer__Description {
+.footer__description {
     flex-basis: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.footer__Description-item {
+.footer__description-item {
     display: block;
     width: 3rem;
     font-size: 1.5rem;
@@ -527,7 +527,7 @@ body {
        flex-direction: column;
        height: 80rem;
     }
-    .footer__Description {
+    .footer__description {
         flex-direction: column;
         height: 50rem;
         align-items: center;
