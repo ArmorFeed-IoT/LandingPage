@@ -11,7 +11,6 @@ import { setFooterNavContent } from "./footerNav.js";
     const paths = [
         ["home.html", "Home"],
         ["about-us.html", "About-us"],
-        ["plans.html", "Plans"],
         ["services.html", "Services"],
         ["help.html", "Help"]];
 

@@ -88,6 +88,10 @@ body {
     align-items: center;
 }
 
+.w-100 {
+    min-width: 100px;
+}
+
 /** About us Styles **/
 .about-us-title {
     text-align: center;
@@ -451,11 +455,14 @@ body {
     width: 100%;
     padding: 0 2rem;
     display: flex;
+    justify-content: space-around;
 }
 .header__logo{
     flex-basis: 30%;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: var(--Darked);
 }
 .header__tabs {
     flex-basis: 70%;
@@ -464,7 +471,9 @@ body {
     align-items: center;
 }
 .header__logo-text {
+    padding-top: 1rem;
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .header__tabs li {
@@ -474,7 +483,8 @@ body {
 
 .header__tabs-item {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
     list-style-type: none;
     padding: 1rem;
     text-decoration: none;
@@ -484,7 +494,7 @@ body {
 }
 .header__tabs-item:hover {
     background-color: rgba(186, 215, 247,0.2);
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 /* Special Classes to work with JavaScript */
 
@@ -531,7 +541,6 @@ body {
 }
 .not-clickable {
     display: block;
-    border-radius: 2rem;
     background-color: var(--BlueLight);
     color: var(--BlueDark)
 }
@@ -562,7 +571,7 @@ body {
 /* NavBar Media Queries*/
 @media (max-width: 1280px) {
     .header__tabs-item {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .header__logo-text {
         font-size: 1.5rem;
@@ -651,6 +660,7 @@ body {
     display: block;
     width: 3rem;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

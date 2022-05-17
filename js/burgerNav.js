@@ -7,7 +7,7 @@ let allowed = true;
 export function SetBurgerNavIconEvent(){
     burgerIcon.addEventListener('click', e => {
         const element = document.querySelector('body');
-        const referenceNode = document.querySelector('.container');
+        const referenceNode = document.querySelector('.base');
         navInjection(element,InjectNavInDOM,referenceNode);
     })
 }
