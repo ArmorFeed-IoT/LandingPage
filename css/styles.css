@@ -88,6 +88,12 @@ body {
     align-items: center;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .w-100 {
     min-width: 100px;
 }
