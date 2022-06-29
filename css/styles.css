@@ -1007,3 +1007,38 @@ body {
         margin-bottom: 5rem;
     }
 }
+
+.video {
+    width: 350px;
+    height: 200px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+}
+@media(min-width: 576px) {
+    .video {
+        width: 520px;
+        height: 337px;
+    }
+}
+@media (min-width: 768px) {
+    .video {
+        width: 520px;
+        height: 337px;
+    }
+}
+@media (min-width: 992px) {
+    .video {
+        width: 700px;
+        height: 445px;
+    }
+}
+@media (min-width: 1200px) {
+    .video {
+        width: 850px;
+        height: 476px;
+    }
+}
