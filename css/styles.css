@@ -920,7 +920,8 @@ body {
     }
 }
 
-/** Help styles **/
+/** HELP STYLES **/
+
 .help-title {
     text-align: center;
     font-size: 5rem;
@@ -939,7 +940,20 @@ body {
     margin-bottom: 4rem;
 }
 
-.help__content__question__item-question,
+.help__content__question__item-question {
+    border-radius: 10px;
+    border: 2px dashed #5d7fef93;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.help__content__question__item-question:hover {
+    border: 2px solid #003cff;
+    transition: 0.3s;
+}
+
 .help__content__formQuestion {
     font-weight: bold;
     font-size: 2.5rem;
@@ -947,8 +961,10 @@ body {
 
 .help__content__question__item-answer {
     font-size: 2rem;
+    text-align: center;
 }
 .help__content__formQuestion {
+    margin-bottom: 0;
     text-align: center;
     margin-top: 1.5rem;
 }
@@ -967,13 +983,27 @@ body {
     padding: 2rem 0;
 }
 .help__content__form-btn {
+    background-color: #5d5fef;
+    color: white;
+    border-color: #5d5fef;
+    border-radius: 10px;
+    width: 650px;
+    height: 60px;
     font-size: 2rem;
     font-weight: 500;
+    box-shadow: 1px 1px 6px black
 }
+
+.help__content__form-btn:hover {
+    background-color: #5d7fef;
+    transition:0.2s;
+    box-shadow: 2px 2px 10px black;
+}
+
 .help__content__form-textarea {
     font-size: 2.4rem;
     display: block;
-    padding: 50px;
+    padding: 30px;
 }
 
 @media (max-width: 768px) {
