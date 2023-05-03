@@ -110,7 +110,7 @@ body {
 /** About us Styles **/
 .about-us-title {
     text-align: center;
-    font-size: 8rem;
+    font-size: 5rem;
 }
 .about-us__content__section__first-img {
     display: block;
@@ -190,6 +190,7 @@ body {
 @media (max-width: 480px){
     .about-us-title {
         font-size: 3rem;
+        margin-bottom: 5rem;
     }
     .about-us__content__section__first-description, .about-us__content__section__second-description{
         width: 90%;
@@ -212,7 +213,94 @@ body {
         margin: 0 auto;
         margin-bottom: 6rem;
     }
+}
 
+.features__about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+    padding: 5.7rem 0;
+}
+@media (min-width: 970px) {
+    .features__about-us__elements {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+}
+.features__about-us__title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.features__about-us__description {
+    margin-bottom: 2.5rem;
+}
+
+.feature__about-us {
+    width: 100%;
+    background-color: var(--Light);
+    border-radius: 2rem;
+    padding: 3.5rem 1.8rem;
+    margin-bottom: 3.6rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.50);
+}
+.feature__about-us__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 970px) {
+    .feature__about-us {
+        width: 80rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+    .feature__about-us__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature__about-us__image {
+        padding: 0 2rem;
+    }
+}
+.feature__about-us__image {
+    display: flex;
+    justify-content: center;
+}
+.feature__about-us:last-child {
+    margin-bottom: 0rem;
+}
+.feature__about-us__text-description {
+    font-size: 2.5rem;
+    max-width: 60rem;
+    width: 100%;
+}
+.feature__about-us__text-title {
+    font-size: 4rem;
+    margin-top: 0;
+}
+.feature__about-us__text-action {
+    margin-bottom: 1.6rem;
+}
+.feature__about-us__image {
+    height: 20rem;
+}
+.feature__about-us__text-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-us__videos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
 }
 
 /* HOME SELECTORS */
